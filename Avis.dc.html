@@ -102,56 +102,9 @@
   <!-- HERO + SUMMARY -->
   <section style="max-width:1120px;margin:0 auto;padding:clamp(48px,7vw,90px) clamp(18px,2.8vw,40px) clamp(30px,4vw,50px)">
     <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;margin-bottom:clamp(36px,5vw,60px)">
-      <span style="font-family:'Work Sans';font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#0E2180">Ils adorent Brioche</span>
+      <span style="font-family:'Work Sans';font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#0E2180">Votre avis compte</span>
       <h1 style="margin:0;font-family:'ruddy','Archivo Black',sans-serif;font-weight:700;text-transform:uppercase;color:#0E2180;font-size:clamp(44px,7vw,92px);line-height:.9;letter-spacing:-.01em">Avis clients</h1>
-      <p style="margin:0;max-width:520px;font-size:17px;line-height:1.6;color:#4a4568">Ce que nos clients et leurs chiens pensent de nos accessoires. Exemples à titre indicatif.</p>
-    </div>
-
-    <div class="av-sum" style="display:grid;grid-template-columns:280px 1fr;gap:clamp(24px,3vw,44px);align-items:center;background:#fffdf9;border:1px solid rgba(14,33,128,.12);border-radius:22px;padding:clamp(24px,3vw,40px)">
-      <div style="text-align:center;border-right:1px solid rgba(14,33,128,.12);padding-right:20px">
-        <div style="font-family:'ruddy','Archivo Black',sans-serif;font-weight:700;color:#0E2180;font-size:64px;line-height:1">4,9</div>
-        <div role="img" aria-label="4,9 sur 5" style="display:flex;gap:3px;justify-content:center;margin:6px 0 8px">
-          <sc-for list="{{ five }}" as="s" hint-placeholder-count="5">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
-          </sc-for>
-        </div>
-        <div style="font-size:13px;color:#8983b0;font-weight:600">Sur 1 240 avis vérifiés</div>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:9px">
-        <sc-for list="{{ breakdown }}" as="b" hint-placeholder-count="5">
-          <div style="display:flex;align-items:center;gap:12px">
-            <span style="font-size:13px;font-weight:700;color:#26224f;width:34px">{{ b.stars }}★</span>
-            <div style="flex:1;height:8px;background:rgba(14,33,128,.1);border-radius:999px;overflow:hidden"><div style="height:100%;width:{{ b.pct }};background:#0E2180;border-radius:999px"></div></div>
-            <span style="font-size:12px;color:#8983b0;width:40px;text-align:right">{{ b.pct }}</span>
-          </div>
-        </sc-for>
-      </div>
-    </div>
-  </section>
-
-  <!-- REVIEWS GRID -->
-  <section style="max-width:1240px;margin:0 auto;padding:0 clamp(18px,2.8vw,40px) clamp(56px,7vw,100px)">
-    <div class="av-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.2vw,28px)">
-      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="6">
-        <article style="background:#fffdf9;border:1px solid rgba(14,33,128,.12);border-radius:18px;padding:28px 26px 30px;display:flex;flex-direction:column;gap:14px">
-          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
-            <div role="img" aria-label="{{ r.stars }} sur 5" style="display:flex;gap:3px">
-              <sc-for list="{{ r.starList }}" as="st" hint-placeholder-count="5">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="{{ st.fill }}" stroke="{{ st.stroke }}" stroke-width="{{ st.sw }}"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
-              </sc-for>
-            </div>
-            <span style="font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#0E2180;background:rgba(14,33,128,.08);padding:5px 10px;border-radius:999px">Achat vérifié</span>
-          </div>
-          <p style="margin:0;font-size:15.5px;line-height:1.55;color:#3f3a63;flex:1">{{ r.text }}</p>
-          <div style="display:flex;align-items:center;gap:12px;padding-top:4px;border-top:1px solid rgba(14,33,128,.1)">
-            <div style="width:40px;height:40px;border-radius:999px;background:{{ r.avatarBg }};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:#fffdf9;flex:0 0 auto">{{ r.initials }}</div>
-            <div style="display:flex;flex-direction:column">
-              <span style="font-family:'Instrument Serif',serif;font-size:19px;color:#26224f;line-height:1.1">{{ r.name }}</span>
-              <span style="font-size:12.5px;color:#8983b0">{{ r.meta }}</span>
-            </div>
-          </div>
-        </article>
-      </sc-for>
+      <p style="margin:0;max-width:520px;font-size:17px;line-height:1.6;color:#4a4568">Vous avez testé un produit Brioche ? Partagez votre expérience avec les autres propriétaires de chiens.</p>
     </div>
   </section>
 
