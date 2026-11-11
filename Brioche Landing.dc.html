@@ -151,7 +151,8 @@
     .indispensables-desc{display:none !important}
     /* grille : 2 petites cartes côte à côte, marges serrées */
     .indispensables-grid{grid-template-columns:1fr 1fr !important;gap:12px !important}
-    .indispensables-grid .brioche-card{border-radius:14px !important}
+    .indispensables-grid .brioche-card{border-radius:14px !important;min-width:0 !important}
+    .indispensables-grid .brioche-card h3{overflow-wrap:break-word !important}
     .indispensables-grid .brioche-card>div:first-child{padding:16px 0 2px !important}
     .indispensables-grid .brioche-card>div:last-child{padding:8px 12px 14px !important}
     .indispensables-grid .brioche-card h3{font-size:15px !important}
@@ -353,7 +354,7 @@
         <p class="indispensables-desc" style="margin: 8px 0 0; max-width: 392px; font-size: clamp(16px,1.6vw,22px); line-height: 1.5; color: #e7ddc2; font-weight: 700; position: relative; top: 93px; z-index: 22; flex: 0 1 392px">Gardez vos mains disponibles pendant vos promenades.<br>Vous restez libre de vos mouvements.</p>
       </div>
 
-      <div class="indispensables-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(20px,2.4vw,36px)">
+      <div class="indispensables-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(20px,2.4vw,36px)">
 
         <article class="brioche-card" style="background:#fffdf9;border-radius:16px;overflow:visible;display:flex;flex-direction:column;position:relative;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-4px);box-shadow:0 16px 32px rgba(14,33,128,.16)" style-active="transform:translateY(-1px) scale(.995)">
           <a href="Fiche Produit.dc.html" aria-label="Voir Laisse Main Libre" class="brioche-cover" style="position:absolute;inset:0;z-index:6;border-radius:16px;display:block"></a>
@@ -406,6 +407,24 @@
               <span style="font-weight:700;font-size:17px;color:#26224f;white-space:nowrap;flex:0 0 auto">20 €</span>
             </div>
             <p style="margin:0;font-size:14px;color:#8a8598">Gourde + gamelle 2-en-1</p>
+          </div>
+        </article>
+
+        <article class="brioche-card" style="background:#fffdf9;border-radius:16px;overflow:visible;display:flex;flex-direction:column;position:relative;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-4px);box-shadow:0 16px 32px rgba(14,33,128,.16)" style-active="transform:translateY(-1px) scale(.995)">
+          <a href="Fiche Produit Boule.dc.html" aria-label="Voir Boule de léchage" class="brioche-cover" style="position:absolute;inset:0;z-index:6;border-radius:16px;display:block"></a>
+          <div style="position:relative;padding:34px 0 10px">
+            <span style="position:absolute;top:16px;left:16px;z-index:2;background:#2b2568;color:#f0e7cf;font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px">Anti-stress</span>
+            <span class="bq-imgwrap" style="display:block;position:relative;aspect-ratio:1/1;overflow:hidden;border-radius:8px">
+              <img class="bq-base" src="./assets/card-boule.png" alt="Boule de léchage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+              <img class="bq-hover" src="./assets/boule-situation.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </span>
+          </div>
+          <div style="padding:8px 24px 26px;display:flex;flex-direction:column;gap:5px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">
+              <h3 style="margin:0;font-family:'Work Sans';font-weight:500;font-size:26px;color:#26224f;line-height:1">Boule de léchage</h3>
+              <span style="font-weight:700;font-size:17px;color:#26224f;white-space:nowrap;flex:0 0 auto">15 €</span>
+            </div>
+            <p style="margin:0;font-size:14px;color:#8a8598">Tapis anti-glouton · ventouse</p>
           </div>
         </article>
 
