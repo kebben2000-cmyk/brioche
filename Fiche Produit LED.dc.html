@@ -106,7 +106,7 @@
     <span style="margin:0 8px">/</span>
     <a href="Nos Produits.dc.html" style="color:#8983b0" style-hover="color:#0E2180">Nos produits</a>
     <span style="margin:0 8px">/</span>
-    <span style="color:#0E2180">Laisse LED Rétractable</span>
+    <span style="color:#0E2180">Laisse LED Main Libre</span>
   </div>
 
   <!-- PRODUCT -->
@@ -149,7 +149,7 @@
       <div style="display:flex;flex-direction:column;gap:22px;padding-top:6px">
         <div style="display:flex;flex-direction:column;gap:10px">
           <span style="font-family:'Work Sans';font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#0E2180">Laisse rétractable LED lumineuse</span>
-          <h1 style="margin:0;font-family:'ruddy','Archivo Black',sans-serif;font-weight:700;text-transform:uppercase;color:#0E2180;font-size:clamp(44px,6vw,76px);line-height:.9;letter-spacing:-.01em">Laisse LED Rétractable</h1>
+          <h1 style="margin:0;font-family:'ruddy','Archivo Black',sans-serif;font-weight:700;text-transform:uppercase;color:#0E2180;font-size:clamp(44px,6vw,76px);line-height:.9;letter-spacing:-.01em">Laisse LED Main Libre</h1>
           <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
             <div style="display:flex;align-items:center;gap:8px">
               <div role="img" aria-label="5 sur 5" style="display:flex;gap:3px">
@@ -397,7 +397,7 @@ class Component extends DCLogic {
       next: () => this.go(idx + 1),
       inc: () => this.setState(s => ({ qty: s.qty + 1 })),
       dec: () => this.setState(s => ({ qty: Math.max(1, s.qty - 1) })),
-      addToCart: () => { if(window.BriocheCart) window.BriocheCart.add({id:'laisse-led',name:'Laisse LED Rétractable',variant:activeColor.name,price:49.40,img:activeColor.src,qty:this.state.qty}); this.setState({ added: true }); setTimeout(() => this.setState({ added: false }), 1800); }
+      addToCart: () => { if(window.BriocheCart) window.BriocheCart.add({id:'laisse-led',name:'Laisse LED Main Libre',variant:activeColor.name,price:49.40,img:activeColor.src,qty:this.state.qty}); this.setState({ added: true }); setTimeout(() => this.setState({ added: false }), 1800); }
     };
   }
 }
