@@ -1,0 +1,7 @@
+*{box-sizing:border-box}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font:var(--font-body);letter-spacing:var(--tracking-body);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,p,figure{margin:0}
+a{color:var(--link-color);text-decoration:none}
+a:hover{color:var(--color-primary-hover)}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer}

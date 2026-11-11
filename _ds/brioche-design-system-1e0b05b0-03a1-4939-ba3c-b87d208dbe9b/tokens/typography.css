@@ -1,0 +1,17 @@
+:root{
+--font-hero:400 60px/1.05 var(--font-family-display);--tracking-hero:-0.01em;
+--font-display-lg:400 42px/1.1 var(--font-family-display);--tracking-display-lg:-0.01em;
+--font-display-md:600 32px/1.25 var(--font-family-body);--tracking-display-md:0;
+--font-lead:400 26px/1.5 var(--font-family-body);--tracking-lead:0;
+--font-lead-airy:italic 400 22px/1.6 var(--font-family-display);--tracking-lead-airy:0;
+--font-tagline:600 20px/1.3 var(--font-family-body);--tracking-tagline:0.01em;
+--font-body-strong:600 17px/1.6 var(--font-family-body);--tracking-body-strong:0;
+--font-body:400 17px/1.6 var(--font-family-body);--tracking-body:0;
+--font-dense-link:400 16px/2.2 var(--font-family-body);--tracking-dense-link:0;
+--font-caption:400 14px/1.4 var(--font-family-body);--tracking-caption:0;
+--font-caption-strong:600 14px/1.3 var(--font-family-body);--tracking-caption-strong:0;
+--font-button:500 16px/1 var(--font-family-body);--tracking-button:0.01em;
+--font-button-utility:500 13px/1.2 var(--font-family-body);--tracking-button-utility:0.04em;
+--font-fine-print:400 12px/1.4 var(--font-family-body);--tracking-fine-print:0;
+--font-nav-link:500 13px/1 var(--font-family-body);--tracking-nav-link:0.03em;
+}

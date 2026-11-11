@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Work+Sans:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+<script src="./assets/image-slot.js"></script>
+<style>
+  @import url("https://use.typekit.net/apo6lqf.css");
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:#f3efe1;font-family:'Work Sans',system-ui,sans-serif;color:#26224f;-webkit-font-smoothing:antialiased}
+  a{color:#0E2180;text-decoration:none}
+  a:hover{color:#26224f}
+  ::selection{background:#0E2180;color:#e6e0c0}
+  @keyframes brioche-breathe{0%,100%{transform:translateX(-50%) translateY(0) rotate(0deg) scale(1)}20%{transform:translateX(-50%) translateY(-4px) rotate(-1deg) scale(1.012,1.022)}45%{transform:translateX(-50%) translateY(-1px) rotate(1.2deg) scale(1.006,1.01)}70%{transform:translateX(-50%) translateY(-5px) rotate(-.6deg) scale(1.014,1.024)}88%{transform:translateX(-50%) translateY(-1px) rotate(.4deg) scale(1.004,1.008)}}
+  @keyframes brioche-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+  @keyframes brioche-wobble{0%,100%{transform:rotate(-5deg) scale(1)}50%{transform:rotate(5deg) scale(1.06)}}
+</style>
+<script>
+(function(){function wire(){var v=document.getElementById('concept-video');if(!v){return setTimeout(wire,300);}var k='brioche-concept-video-pos';var t=parseFloat(localStorage.getItem(k));if(!isNaN(t)){try{v.currentTime=t;}catch(e){}}v.addEventListener('timeupdate',function(){if(!v.seeking)localStorage.setItem(k,v.currentTime);});}if(document.readyState!=='loading')wire();else document.addEventListener('DOMContentLoaded',wire);})();
+</script>
+</helmet>
+<div style="width:100%;overflow:hidden">
+
+  <!-- ===================== HERO ===================== -->
+  <section style="position:relative;width:100%;background:#f3efe1;overflow:hidden">
+
+    <!-- top bar (HEADER — overlay responsive) -->
+    <header style="position: absolute; top: -1px; left: 1px; right: 0; z-index: 6; display: flex; align-items: center; justify-content: space-between; padding: clamp(14px,2.2vw,26px) clamp(18px,2.8vw,40px) 0">
+      <a href="#" style="display:flex;align-items:center;flex:0 0 auto">
+        <img src="./assets/logo-brioche-indigo.png" alt="Brioche" style="height:clamp(26px,2.4vw,34px);width:auto;display:block">
+      </a>
+      <nav style="display:flex;flex-wrap:wrap;gap:clamp(20px,3vw,44px);align-items:center;justify-content:center;font-family:'Work Sans';font-weight:700;font-size:clamp(12px,1.05vw,15px);letter-spacing:.08em;text-transform:uppercase;color:#0E2180">
+        <a href="Brioche Landing.dc.html" style="color:#0E2180;transition:opacity .2s" style-hover="opacity:.6">ACCUEIL</a>
+        <a href="Nos Produits.dc.html" style="color:#0E2180;transition:opacity .2s" style-hover="opacity:.6">Nos produits</a>
+        <a href="#avis" style="color:#0E2180;transition:opacity .2s" style-hover="opacity:.6">AVIS</a>
+        <a href="#footer" style="color:#0E2180;transition:opacity .2s" style-hover="opacity:.6">Contact</a>
+      </nav>
+      <a href="#produits" style="flex:0 0 auto;color:#e6e0c0;font-family:'Work Sans';font-weight:700;font-size:clamp(12px,1.05vw,15px);letter-spacing:.08em;text-transform:uppercase;padding:clamp(16px,2vw,26px) clamp(20px,2.4vw,34px) clamp(18px,2.2vw,30px);border-radius:0 0 22px 22px;transition:background .2s;background-color:#0E2180" style-hover="background:#26224f">La boutique</a>
+    </header>
+
+    <!-- Scène proportionnelle : ratio verrouillé, tout positionné en % → identique en édition / présentation / plein écran -->
+    <div style="position:relative;width:100%;aspect-ratio:1440/820">
+
+      <!-- vague bleue (bord ondulé ancré ~54,5% ; le bleu descend jusqu'en bas — ratio verrouillé = ancrage bas proportionnel) -->
+      <img src="./france-grand-banni-re-1-ms1wu8f3-gbtz.png" alt="france-grand-banni-re-1" width="5394" height="312" style="max-width: 159%; height: 499px; display: block; object-fit: contain; width: 1473px; aspect-ratio: 5394 / 312; position: relative; top: -262px; left: -16px"><img src="./picto-fond-coup-bon-ms0v18wg-cuu3.png" alt="" style="position: absolute; left: 678px; top: 616px; transform: translateX(-50%); width: 1865px; height: 410px; object-fit: fill; z-index: 11; pointer-events: none">
+
+      <!-- wordmark Brioche (arrière-plan) -->
+      <img src="./logo-brioche-ecriture-ms0vfiyy-f2pa.png" alt="Brioche" style="position: absolute; left: 745px; top: 311px; transform: translate(-50%,-50%); width: 1332px; height: 588px; object-fit: contain; z-index: 1">
+
+      <!-- chien centré par-dessus le wordmark -->
+      <img src="./chien-detour--ms0uqt43-d19x.png" alt="Corgi Brioche" style="position: absolute; left: 674px; top: 149px; transform: translateX(-50%); height: 721px; width: 701px; object-fit: contain; z-index: 1; transform-origin: 50% 100%; animation: brioche-breathe 4s ease-in-out infinite; will-change: transform">
+
+      <!-- tampon vert (bas gauche) -->
+      <img src="./badge-vert-ms0v3vre-arxz.png" alt="Probably your pet's favorite shop" style="position: absolute; left: 73px; top: 371px; width: 239px; height: 156px; object-fit: contain; z-index: 4; transform-origin: 50% 50%; animation: brioche-wobble 2.6s ease-in-out infinite; will-change: transform">
+
+      <!-- os Better Together (bas droite) -->
+      
+    <img src="./stickers-os-ms0zfhht-deuj.png" alt="stickers-os" width="671" height="267" style="max-width: 100%; display: block; object-fit: contain; aspect-ratio: 671 / 267; position: absolute; left: 917px; top: 567px; z-index: 17; width: 477px; height: 169px; transform-origin: 50% 50%; animation: brioche-wobble 2.6s ease-in-out infinite; will-change: transform"><img src="./pattern-beige-home-page-ms1y8qxt-2hqd.png" alt="pattern-beige-home-page" width="5462" height="1536" style="max-width: 388%; height: 843px; display: block; object-fit: contain; width: 2618px; aspect-ratio: 5462 / 1536; position: absolute; top: -49px; left: -536px"></div>
+  </section>
+
+  <!-- ===================== NOS INDISPENSABLES ===================== -->
+  
+
+  <!-- ===================== PATTERN BAND ===================== -->
+  
+
+  <!-- ===================== FACILITE (blue, doodles) ===================== -->
+  
+
+  <!-- ===================== EMPLACEMENT VIDÉO PLEINE LARGEUR (fond bleu) ===================== -->
+  <section id="produits" style="padding: 24px 40px 150px; background-color: #0E438D; position: relative; width: 1379px; height: 694px; top: 0px; overflow: visible">
+    <div style="max-width:1240px;margin:0 auto">
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; margin-bottom: 52px; flex-wrap: wrap; position: relative; top: -95px">
+        <h2 style="margin: 0; font-family: 'ruddy','Archivo Black',sans-serif; font-weight: 700; text-transform: uppercase; color: #f4ead2; font-size: clamp(40px,6vw,84px); line-height: .9; letter-spacing: -.01em; z-index: 17; position: relative; top: 81px">Nos<br>indispensables</h2>
+        <p style="margin: 8px 0 0; max-width: 340px; font-size: 22px; line-height: 1.5; color: #e7ddc2; font-weight: 700; position: relative; top: 93px; z-index: 22; width: 392px; height: 105px; left: -20px">Gardez vos mains disponibles pendant vos promenades.<br>Vous restez libre de vos mouvements.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px">
+
+        <article class="brioche-card" style="background:#fffdf9;border-radius:16px;overflow:visible;display:flex;flex-direction:column;position:relative;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-4px);box-shadow:0 16px 32px rgba(14,33,128,.16)" style-active="transform:translateY(-1px) scale(.995)">
+          <a href="Fiche Produit.dc.html?p=framboise" aria-label="Voir Framboise" class="brioche-cover" style="position:absolute;inset:0;z-index:6;border-radius:16px;display:block"></a>
+          <div style="position:relative;padding:34px 0 10px">
+            <span style="position:absolute;top:16px;left:16px;z-index:2;background:#2b2568;color:#f0e7cf;font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px">Nouveau</span>
+            
+            
+          <img src="./vue-haut-rose-ms0xgo1b-karl.png" alt="Laisse Framboise" style="display: block; width: 321px; margin: 0 auto; border-radius: 8px; object-fit: cover; height: 262px; position: static"></div>
+          <div style="padding:8px 24px 26px;display:flex;flex-direction:column;gap:5px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline">
+              <h3 style="margin:0;font-family:'Work Sans';font-weight:500;font-size:26px;color:#26224f;line-height:1">Framboise</h3>
+              <span style="font-weight:700;font-size:17px;color:#26224f">35 €</span>
+            </div>
+            <p style="margin:0;font-size:14px;color:#8a8598">Laisse main libre 2.5 m</p>
+          </div>
+        </article>
+
+        <article class="brioche-card" style="background:#fffdf9;border-radius:16px;overflow:visible;display:flex;flex-direction:column;position:relative;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-4px);box-shadow:0 16px 32px rgba(14,33,128,.16)" style-active="transform:translateY(-1px) scale(.995)">
+          <a href="Fiche Produit.dc.html?p=cannelle" aria-label="Voir Cannelle" class="brioche-cover" style="position:absolute;inset:0;z-index:6;border-radius:16px;display:block"></a>
+          <div style="position:relative;padding:34px 0 10px">
+            
+            <img src="./vue-du-haut-bleu-ms0xhrks-2rve.png" alt="Laisse Cannelle" style="display: block; width: 320px; margin: 0 auto; border-radius: 8px; object-fit: cover; height: 259px">
+          </div>
+          <div style="padding:8px 24px 26px;display:flex;flex-direction:column;gap:5px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline">
+              <h3 style="margin:0;font-family:'Work Sans';font-weight:500;font-size:26px;color:#26224f;line-height:1">Cannelle</h3>
+              <span style="font-weight:700;font-size:17px;color:#26224f">35 €</span>
+            </div>
+            <p style="margin:0;font-size:14px;color:#8a8598">Laisse main libre 2.5 m</p>
+          </div>
+        </article>
+
+        <article class="brioche-card" style="background:#fffdf9;border-radius:16px;overflow:visible;display:flex;flex-direction:column;position:relative;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-4px);box-shadow:0 16px 32px rgba(14,33,128,.16)" style-active="transform:translateY(-1px) scale(.995)">
+          <a href="Fiche Produit.dc.html?p=muscade" aria-label="Voir Muscade" class="brioche-cover" style="position:absolute;inset:0;z-index:6;border-radius:16px;display:block"></a>
+          <div style="position:relative;padding:34px 0 10px">
+            
+            <img src="./vue-du-haut-produit-ms0xi3e8-x61n.png" alt="Laisse Muscade" style="display: block; width: 309px; margin: 0 auto; border-radius: 8px; object-fit: cover; height: 250px">
+          </div>
+          <div style="padding:8px 24px 26px;display:flex;flex-direction:column;gap:5px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline">
+              <h3 style="margin:0;font-family:'Work Sans';font-weight:500;font-size:26px;color:#26224f;line-height:1">Muscade</h3>
+              <span style="font-weight:700;font-size:17px;color:#26224f">55 €</span>
+            </div>
+            <p style="margin:0;font-size:14px;color:#8a8598">Laisse main libre LED 5 m</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FACILITE (blue, doodles) ===================== -->
+  
+
+  <!-- ===================== ILS ADORENT ===================== -->
+  <section style="padding: 150px 0; position: relative; top: -40px; height: 459px; width: 1366px">
+    
+  <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; color: #cfd6ff; pointer-events: none; left: 0px; top: 42px; width: 1361px; height: 432px">
+        <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#e6e0c0" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M10 8l6 4-6 4z" fill="#e6e0c0" stroke="none"></path></svg>
+        <span style="font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Déposez une vidéo</span>
+      </div></section><section style="position: relative; overflow: hidden; padding: 150px 40px 160px; background-color: #0E438D; top: -49px">
+    
+    
+    <div style="position:relative;z-index:2;max-width:900px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:30px">
+      <img src="./assets/logo-brioche-cream.png" alt="Brioche" style="height:46px;width:auto">
+      <h2 style="margin:0;font-family:'ruddy','Archivo Black',sans-serif;font-weight:700;text-transform:uppercase;color:#f4ead2;font-size:clamp(32px,4.4vw,60px);line-height:1.08;letter-spacing:.01em">Facilite ta<br>promenade pour<br>toi et ton chien</h2>
+      <p style="margin:8px 0 0;max-width:460px;font-size:15px;line-height:1.55;color:#b9c0e6;font-weight:500">Chaque pièce Brioche est pensée pour le confort de votre chien ainsi que son maître.</p>
+      <a href="#produits" style="background:#f4ead2;color:#0E2180;font-family:'Work Sans';font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;padding:16px 34px;border-radius:999px;transition:transform .12s ease,background .2s" style-hover="background:#fffcf8" style-active="transform:scale(.96)">Découvrir la boutique</a>
+    </div>
+  <img src="./petit-chien-droit-d-tour--ms0wxz8s-crms.png" alt="petit-chien-droit-d-tour-" width="932" height="887" style="max-width: 100%; height: 465px; display: block; object-fit: cover; width: 663px; aspect-ratio: 932 / 887; position: absolute; left: -233px; top: -4px"><img src="./petit-chien-2-detour-droit-ms0wwshn-4o6a.png" alt="petit-chien-2-detour-droit" width="1151" height="1029" style="max-width: 100%; height: 697px; display: block; object-fit: contain; width: 597px; aspect-ratio: 1151 / 1029; position: absolute; left: 956px; top: 291px; z-index: 151"></section><section id="avis" style="background: #f3efe1; padding: 96px 40px 40px; position: relative; top: -58px">
+    <div style="max-width:1240px;margin:0 auto">
+      <div style="display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;margin-bottom:44px">
+        <h2 style="margin:0;font-family:'ruddy','Archivo Black',sans-serif;font-weight:700;text-transform:uppercase;color:#0E2180;font-size:clamp(34px,5vw,68px);line-height:.92;letter-spacing:-.01em">Ils adorent</h2>
+        <span style="font-size:16px;font-weight:600;color:#5b567a">4,9/5 · 1 240 avis vérifiés</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px">
+
+        <article class="brioche-review" style="background:#fffdf9;border:1px solid rgba(14,33,128,.12);border-radius:16px;padding:30px 30px 32px;display:flex;flex-direction:column;gap:16px;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-3px);box-shadow:0 12px 26px rgba(14,33,128,.10)">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div role="img" aria-label="5 sur 5" style="display:flex;gap:3px">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+            </div>
+            <span style="font-weight:700;font-size:14px;color:#0E2180">5/5</span>
+          </div>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:#3f3a63;flex:1">« La laisse Noisette est superbe et le cuir sent divinement bon. Deux mois d'usage quotidien et elle est comme neuve. »</p>
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <span style="font-family:'Instrument Serif',serif;font-size:22px;color:#26224f;line-height:1">Camille R.</span>
+            <span style="font-size:13px;color:#8983b0">Propriétaire de Romeo</span>
+          </div>
+        </article>
+
+        <article class="brioche-review" style="background:#fffdf9;border:1px solid rgba(14,33,128,.12);border-radius:16px;padding:30px 30px 32px;display:flex;flex-direction:column;gap:16px;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-3px);box-shadow:0 12px 26px rgba(14,33,128,.10)">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div role="img" aria-label="4 sur 5" style="display:flex;gap:3px">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b8b3d6" stroke-width="1.8"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+            </div>
+            <span style="font-weight:700;font-size:14px;color:#0E2180">4/5</span>
+          </div>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:#3f3a63;flex:1">« Collier Cannelle magnifique et solide. J'aurais aimé une taille intermédiaire pour mon corgi, mais la finition laiton est parfaite. »</p>
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <span style="font-family:'Instrument Serif',serif;font-size:22px;color:#26224f;line-height:1">Thomas L.</span>
+            <span style="font-size:13px;color:#8983b0">Propriétaire de Ozy</span>
+          </div>
+        </article>
+
+        <article class="brioche-review" style="background:#fffdf9;border:1px solid rgba(14,33,128,.12);border-radius:16px;padding:30px 30px 32px;display:flex;flex-direction:column;gap:16px;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-3px);box-shadow:0 12px 26px rgba(14,33,128,.10)">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div role="img" aria-label="5 sur 5" style="display:flex;gap:3px">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0E2180"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9.6l6.6-.9z"></path></svg>
+            </div>
+            <span style="font-weight:700;font-size:14px;color:#0E2180">5/5</span>
+          </div>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:#3f3a63;flex:1">« Le couchage Muscade a transformé les nuits de mon chien. Housse déhoussable très pratique, et fabriqué en France, ça compte pour moi. »</p>
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <span style="font-family:'Instrument Serif',serif;font-size:22px;color:#26224f;line-height:1">Awa D.</span>
+            <span style="font-size:13px;color:#8983b0">Propriétaire de Spyx</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LE CONCEPT EN ACTION ===================== -->
+  <section style="background: #f3efe1; padding: 70px 40px 90px; position: relative; top: -62px; width: 1384px; height: 977px">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px">
+      <span style="font-family:'Work Sans';font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#0E2180">Le concept en action</span>
+      <h2 style="margin:0;font-family:'ruddy','Archivo Black',sans-serif;font-weight:700;text-transform:uppercase;color:#0E2180;font-size:clamp(34px,5vw,64px);line-height:.94;letter-spacing:-.01em">La liberté,<br>tenue en main</h2>
+      <p style="margin:6px 0 26px;max-width:460px;font-size:16px;line-height:1.55;color:#5b4f36;font-weight:500">Une laisse rétractable pensée pour la balade : le confort pour vous, la liberté pour votre chien.</p>
+      <div style="position:relative">
+        <div style="width:clamp(230px,26vw,270px);border-radius:14px;overflow:hidden;background:#26224f">
+          <video id="concept-video" controls="controls" playsinline="playsinline" preload="metadata" style="display:block;width:100%;height:auto">
+            <source src="./uploads/WhatsApp%20Video%202026-07-25%20at%2019.13.03.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+      </div>
+    </div><img src="./badge-vert-ms0wmawi-lpdx.png" alt="badge-vert" width="364" height="267" style="max-width: 100%; height: 125px; display: block; object-fit: cover; width: 200px; aspect-ratio: 364 / 267; position: relative; top: -64px; left: 556px">
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer" style="color: #cfc9ec; padding: 60px 40px 36px; background-color: #0E438D; position: relative; top: -64px">
+    <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between;align-items:flex-start">
+      <div style="max-width:320px;display:flex;flex-direction:column;gap:16px">
+        <img src="./assets/logo-brioche-cream.png" alt="Brioche" style="height: 55px; width: 237px">
+        <p style="margin:0;font-size:14px;line-height:1.5;color:#9a94c4">Accessoires pour chiens, fabriqués en France. Cuir tanné végétal, laiton massif.</p>
+      </div>
+      <nav style="display:flex;gap:72px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <span style="font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:#e6e0c0">Boutique</span>
+          <a href="#produits" style="color:#9a94c4;font-size:14px" style-hover="color:#e6e0c0">Laisses</a>
+          <a href="#produits" style="color:#9a94c4;font-size:14px" style-hover="color:#e6e0c0">Colliers</a>
+          <a href="#produits" style="color:#9a94c4;font-size:14px" style-hover="color:#e6e0c0">Couchages</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <span style="font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:#e6e0c0">Maison</span>
+          <a href="#" style="color:#9a94c4;font-size:14px" style-hover="color:#e6e0c0">À propos</a>
+          <a href="#" style="color:#9a94c4;font-size:14px" style-hover="color:#e6e0c0">Journal</a>
+          <a href="#footer" style="color:#9a94c4;font-size:14px" style-hover="color:#e6e0c0">Contact</a>
+        </div>
+      </nav>
+    </div>
+    <div style="max-width:1240px;margin:40px auto 0;padding-top:20px;border-top:1px solid rgba(230,224,192,.14);font-size:12px;color:#7d77a8">© 2026 Brioche — Fabriqué en France</div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
